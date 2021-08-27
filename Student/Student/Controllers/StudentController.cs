@@ -13,10 +13,14 @@ namespace Student.Controllers
         {
             return View();
         }
-        [HttpPost]
-        public ActionResult GetInfo(string ten, string tuoi, string lop)
+        public ActionResult GetInfo()
         {
-            ViewBag.ten = ten;
+            return View();
+        }
+        [HttpPost]
+        public ActionResult GetInfo(string hoten, string tuoi, string lop)
+        {
+            ViewBag.hoten = hoten;
             ViewBag.tuoi = tuoi;
             ViewBag.lop = lop;
             return View();
