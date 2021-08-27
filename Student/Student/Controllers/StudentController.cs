@@ -9,7 +9,7 @@ namespace Student.Controllers
     public class StudentController : Controller
     {
         // GET: Student
-        public ActionResult Index()
+        public ActionResult Index(string hoten, string tuoi, string lop)
         {
             return View();
         }
